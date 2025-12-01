@@ -80,44 +80,205 @@
                         placeholder="Search projects by name or technology...">
                 </div>
 
-                <!-- Filter Tabs -->
-                <ul class="nav nav-tabs" id="portfolioTabs" role="tablist" data-aos="fade-up" data-aos-delay="200">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
-                            type="button" role="tab" aria-selected="true">All</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#react"
-                            type="button" role="tab" aria-selected="false">React</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="laravel-tab" data-bs-toggle="tab" data-bs-target="#laravel"
-                            type="button" role="tab" aria-selected="false">Laravel</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="node-tab" data-bs-toggle="tab" data-bs-target="#node" type="button"
-                            role="tab" aria-selected="false">Node.js</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="vue-tab" data-bs-toggle="tab" data-bs-target="#vue" type="button"
-                            role="tab" aria-selected="false">Vue.js</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="shopify-tab" data-bs-toggle="tab" data-bs-target="#shopify"
-                            type="button" role="tab" aria-selected="false">Shopify</button>
-                    </li>
+                <!-- Portfolio Grid -->
+                <div class="row g-4" id="portfolio-grid">
 
-                </ul>
+                    <!-- Project 1 -->
+                    <div class="col-lg-6 col-md-6 col-12 project-card-item" data-tech="react laravel node">
+                        <div class="portfolio-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <!-- <div class="icon-box">
+                                        <i class="bi bi-speedometer2"></i>
+                                    </div> -->
+                                    <h3>Auction Web App</h3>
+                                    <div class="tech-pills-sm">
+                                        <span class="badge">React</span>
+                                        <span class="badge">Laravel</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">A high-performance, scalable Auction Web Application designed to
+                                    revolutionize online bidding experiences. This platform connects buyers and sellers
+                                    in real-time, offering a seamless and secure environment for transactions with
+                                    robust concurrency management.</p>
+                                <button class="btn btn-outline-custom mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#modal-project-1">
+                                    See more details <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- Tab Content -->
-                <div class="tab-content pt-4" id="portfolioTabContent" data-aos="fade-up" data-aos-delay="300">
+                    <!-- Project 2 -->
+                    <div class="col-lg-6 col-md-6 col-12 project-card-item" data-tech="node react laravel">
+                        <div class="portfolio-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <!-- <div class="icon-box">
+                                        <i class="bi bi-arrow-left-right"></i>
+                                    </div> -->
+                                    <h3>Shopify App</h3>
+                                    <div class="tech-pills-sm">
+                                        <span class="badge">Node.js</span>
+                                        <span class="badge">Shopify</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">A bespoke Shopify Application tailored for the consultancy sector,
+                                    streamlining complex candidate management workflows directly within the e-commerce
+                                    ecosystem. This solution bridges the gap between retail and service-based
+                                    operations,
+                                    allowing agencies to manage placements as efficiently as products.</p>
+                                <button class="btn btn-outline-custom mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#modal-project-2">
+                                    See more details <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!-- All Projects Tab -->
-                    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-                        <div class="row g-4" id="all-projects-container">
+                    <!-- Project 3 -->
+                    <div class="col-lg-6 col-md-6 col-12 project-card-item" data-tech="react laravel vue">
+                        <div class="portfolio-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <!-- <div class="icon-box">
+                                        <i class="bi bi-code-slash"></i>
+                                    </div> -->
+                                    <h3>Resume System</h3>
+                                    <div class="tech-pills-sm">
+                                        <span class="badge">Vue.js</span>
+                                        <span class="badge">Elasticsearch</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">An intelligent Resume Management System built to simplify the
+                                    recruitment lifecycle for HR professionals. This platform centralizes candidate
+                                    data, offering powerful search and filtering capabilities to identify top talent
+                                    quickly, transforming a chaotic process into a structured workflow.</p>
+                                <button class="btn btn-outline-custom mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#modal-project-3">
+                                    See more details <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-                            <!-- Project 1: Auction Web App -->
-                            <div class="col-lg-12 project-item" data-tech="react laravel node">
+                    <!-- Project 4 -->
+                    <div class="col-lg-6 col-md-6 col-12 project-card-item" data-tech="vue react laravel">
+                        <div class="portfolio-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <!-- <div class="icon-box">
+                                        <i class="bi bi-calendar-check"></i>
+                                    </div> -->
+                                    <h3>Restaurant System</h3>
+                                    <div class="tech-pills-sm">
+                                        <span class="badge">React</span>
+                                        <span class="badge">Laravel</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">A comprehensive Restaurant Management System designed to optimize
+                                    front-of-house and back-of-house operations. From table reservations to inventory
+                                    tracking, this application provides restaurant owners with the tools they need to
+                                    reduce waste, improve service speed, and maximize profitability.</p>
+                                <button class="btn btn-outline-custom mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#modal-project-4">
+                                    See more details <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="col-lg-6 col-md-6 col-12 project-card-item" data-tech="react laravel vue">
+                        <div class="portfolio-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <!-- <div class="icon-box">
+                                        <i class="bi bi-person-badge"></i>
+                                    </div> -->
+                                    <h3>Account System</h3>
+                                    <div class="tech-pills-sm">
+                                        <span class="badge">Security</span>
+                                        <span class="badge">Vue.js</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">A robust Account Management System engineered to provide businesses
+                                    with granular control over financial data and client relationships. This secure
+                                    platform enables organizations to manage invoices, track payments, and maintain
+                                    healthy client communications through a unified interface.</p>
+                                <button class="btn btn-outline-custom mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#modal-project-5">
+                                    See more details <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="col-lg-6 col-md-6 col-12 project-card-item" data-tech="react php node shopify">
+                        <div class="portfolio-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <!-- <div class="icon-box">
+                                        <i class="bi bi-box-seam"></i>
+                                    </div> -->
+                                    <h3>Ordering System</h3>
+                                    <div class="tech-pills-sm">
+                                        <span class="badge">Node.js</span>
+                                        <span class="badge">Shopify</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">A centralized Ordering Management System that unifies sales
+                                    channels into a single, efficient workflow. Whether orders come from Shopify,
+                                    WordPress, or direct entry, this system consolidates them for streamlined
+                                    processing, fulfillment, and tracking.</p>
+                                <button class="btn btn-outline-custom mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#modal-project-6">
+                                    See more details <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7 -->
+                    <div class="col-lg-6 col-md-6 col-12 project-card-item" data-tech="shopify node">
+                        <div class="portfolio-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <!-- <div class="icon-box">
+                                        <i class="bi bi-palette"></i>
+                                    </div> -->
+                                    <h3>Shopify Theme</h3>
+                                    <div class="tech-pills-sm">
+                                        <span class="badge">Liquid</span>
+                                        <span class="badge">UX/UI</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">Premium, high-conversion Shopify Theme development focusing on
+                                    brand aesthetics and user experience. We move beyond standard templates to create
+                                    unique, performance-optimized storefronts that tell a brand's story and drive sales
+                                    while ensuring lightning-fast load times.</p>
+                                <button class="btn btn-outline-custom mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#modal-project-7">
+                                    See more details <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Modals -->
+
+                <!-- Modal 1 -->
+                <div class="modal fade portfolio-modal" id="modal-project-1" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
                                 <div class="content-box">
                                     <div
                                         class="project-header d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
@@ -183,9 +344,19 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- Project 2: Customized E-commerce Shopify App -->
-                            <div class="col-lg-12 project-item" data-tech="node react laravel">
+                <!-- Modal 2 -->
+                <div class="modal fade portfolio-modal" id="modal-project-2" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
                                 <div class="content-box">
                                     <div
                                         class="project-header d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
@@ -250,9 +421,19 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- Project 3: Resume Management System -->
-                            <div class="col-lg-12 project-item" data-tech="react laravel vue">
+                <!-- Modal 3 -->
+                <div class="modal fade portfolio-modal" id="modal-project-3" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
                                 <div class="content-box">
                                     <div
                                         class="project-header d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
@@ -318,9 +499,19 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- Project 4: Restaurant Management System -->
-                            <div class="col-lg-12 project-item" data-tech="vue react laravel">
+                <!-- Modal 4 -->
+                <div class="modal fade portfolio-modal" id="modal-project-4" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
                                 <div class="content-box">
                                     <div
                                         class="project-header d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
@@ -386,9 +577,19 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- Project 5: Account Management System -->
-                            <div class="col-lg-12 project-item" data-tech="react laravel vue">
+                <!-- Modal 5 -->
+                <div class="modal fade portfolio-modal" id="modal-project-5" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
                                 <div class="content-box">
                                     <div
                                         class="project-header d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
@@ -454,9 +655,19 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- Project 6: Ordering Management System -->
-                            <div class="col-lg-12 project-item" data-tech="react php node shopify">
+                <!-- Modal 6 -->
+                <div class="modal fade portfolio-modal" id="modal-project-6" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
                                 <div class="content-box">
                                     <div
                                         class="project-header d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
@@ -519,9 +730,19 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- Project 7: Shopify Theme and Template Design -->
-                            <div class="col-lg-12 project-item" data-tech="shopify node">
+                <!-- Modal 7 -->
+                <div class="modal fade portfolio-modal" id="modal-project-7" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
                                 <div class="content-box">
                                     <div
                                         class="project-header d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
@@ -586,53 +807,10 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-                    <!-- React Tab -->
-                    <div class="tab-pane fade" id="react" role="tabpanel">
-                        <div class="row g-4" id="react-projects-container">
-                            <!-- JS will populate this -->
-                        </div>
-                    </div>
-
-                    <!-- Laravel Tab -->
-                    <div class="tab-pane fade" id="laravel" role="tabpanel">
-                        <div class="row g-4" id="laravel-projects-container">
-                            <!-- JS will populate this -->
-                        </div>
-                    </div>
-
-                    <!-- Node Tab -->
-                    <div class="tab-pane fade" id="node" role="tabpanel">
-                        <div class="row g-4" id="node-projects-container">
-                            <!-- JS will populate this -->
-                        </div>
-                    </div>
-
-                    <!-- Vue Tab -->
-                    <div class="tab-pane fade" id="vue" role="tabpanel">
-                        <div class="row g-4" id="vue-projects-container">
-                            <!-- JS will populate this -->
-                        </div>
-                    </div>
-
-                    <!-- Shopify Tab -->
-                    <div class="tab-pane fade" id="shopify" role="tabpanel">
-                        <div class="row g-4" id="shopify-projects-container">
-                            <!-- JS will populate this -->
-                        </div>
-                    </div>
-
-                    <!-- WordPress Tab -->
-                    <div class="tab-pane fade" id="wordpress" role="tabpanel">
-                        <div class="row g-4" id="wordpress-projects-container">
-                            <!-- JS will populate this -->
-                        </div>
-                    </div>
-
                 </div>
+
 
             </div>
         </section>

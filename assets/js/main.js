@@ -221,63 +221,29 @@
   /**
    * Portfolio Details Page Logic
    */
+  /**
+   * Portfolio Details Page Logic
+   */
   const portfolioDetailsSection = document.getElementById('portfolio-details');
   if (portfolioDetailsSection) {
-    // Logic to populate specific tabs based on "All" tab content
-    const allProjects = document.querySelectorAll('#all-projects-container .project-item');
-
-    const categories = {
-      'react': ['react'],
-      'laravel': ['laravel'],
-      'node': ['node'],
-      'vue': ['vue'],
-      'shopify': ['shopify'],
-      'wordpress': ['wordpress']
-    };
-
-    for (const [tabId, keywords] of Object.entries(categories)) {
-      const container = document.getElementById(`${tabId}-projects-container`);
-      if (container) {
-        allProjects.forEach(project => {
-          const tech = project.getAttribute('data-tech').toLowerCase();
-          if (keywords.some(k => tech.includes(k))) {
-            const clone = project.cloneNode(true);
-            container.appendChild(clone);
-          }
-        });
-      }
-    }
 
     // Search Functionality
     const searchInput = document.getElementById('projectSearch');
     if (searchInput) {
       searchInput.addEventListener('input', function (e) {
         const searchTerm = e.target.value.toLowerCase();
+        const projects = document.querySelectorAll('#portfolio-grid .project-card-item');
 
-        // Filter currently active tab's projects
-        const activeTabPane = document.querySelector('.tab-pane.active');
-        if (activeTabPane) {
-          const projects = activeTabPane.querySelectorAll('.project-item');
+        projects.forEach(project => {
+          const title = project.querySelector('h3').textContent.toLowerCase();
+          const tech = project.querySelector('.tech-pills-sm').textContent.toLowerCase();
+          const desc = project.querySelector('.card-text').textContent.toLowerCase();
 
-          projects.forEach(project => {
-            const title = project.querySelector('h3').textContent.toLowerCase();
-            const tech = project.querySelector('.tech-pills').textContent.toLowerCase();
-            const desc = project.querySelector('.project-description').textContent.toLowerCase();
-
-            if (title.includes(searchTerm) || tech.includes(searchTerm) || desc.includes(searchTerm)) {
-              project.style.display = 'block';
-            } else {
-              project.style.display = 'none';
-            }
-          });
-        }
-      });
-
-      // Re-apply search when tab changes
-      const tabEls = document.querySelectorAll('button[data-bs-toggle="tab"]');
-      tabEls.forEach(tabEl => {
-        tabEl.addEventListener('shown.bs.tab', function (event) {
-          searchInput.dispatchEvent(new Event('input'));
+          if (title.includes(searchTerm) || tech.includes(searchTerm) || desc.includes(searchTerm)) {
+            project.style.display = 'block';
+          } else {
+            project.style.display = 'none';
+          }
         });
       });
     }
