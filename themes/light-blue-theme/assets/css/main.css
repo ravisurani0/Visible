@@ -30,6 +30,7 @@
   --surface-color: #FFFFFF;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #000000;
+  --header-color: #4490c4;
   /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
@@ -1194,7 +1195,7 @@ section,
 .hero .hero-visual .image-wrapper .experience-badge .years {
   font-size: 2.2rem;
   font-weight: 800;
-  color: var(--accent-color);
+  color: var(--header-color);
   line-height: 1;
 }
 
@@ -1321,7 +1322,7 @@ section,
 .about .about-content .tag-badge {
   display: inline-block;
   background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-  color: var(--accent-color);
+  color: var(--header-color);
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
@@ -4865,4 +4866,8 @@ section,
 .portfolio-modal .image-box img {
   border-radius: 10px;
   border: 1px solid var(--accent-color);
+}
+
+.text-info {
+  color: var(--header-color) !important;
 }
