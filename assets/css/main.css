@@ -3407,10 +3407,12 @@ section,
   color: var(--contrast-color);
 }
 
-.contact .info-card .card-content p {
+.contact .info-card .card-content p,
+.contact .info-card .card-content a {
   font-size: 14px;
   margin-bottom: 0;
   opacity: 0.8;
+  color: black;
 }
 
 .contact .social-links-panel {
