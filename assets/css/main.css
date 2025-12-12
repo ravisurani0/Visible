@@ -3408,7 +3408,8 @@ section,
 }
 
 .contact .info-card .card-content p,
-.contact .info-card .card-content a {
+.contact .info-card .card-content a,
+.footer .footer-contact a {
   font-size: 14px;
   margin-bottom: 0;
   opacity: 0.8;
